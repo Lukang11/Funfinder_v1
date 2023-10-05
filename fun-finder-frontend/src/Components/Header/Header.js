@@ -6,18 +6,23 @@ import "./Header.css";
 export default function Header() {
   return (
     <div className="header">
-      <ul className="header-list">
+      <ul className="header-list flex-cont">
         <li className="logo">FunFinder</li>
-        <li>
-          {" "}
-          <FontAwesomeIcon icon={faEarthAmericas} style={{ color: "white" }} />
-        </li>
-        <li>
-          <FontAwesomeIcon icon={faMessage} style={{ color: "white" }} />
-        </li>
-        <li className="prof-btn">
-          <div className="profile-btn"> Profile</div>
-        </li>
+        <div className="flex-cont">
+          <li className="nav-link">
+            {" "}
+            <FontAwesomeIcon
+              icon={faEarthAmericas}
+              style={{ color: "white" }}
+            />
+          </li>
+          <li className="nav-link">
+            <FontAwesomeIcon icon={faMessage} style={{ color: "white" }} />
+          </li>
+          <li className="prof-btn nav-link">
+            <div className="profile-btn"> Profile</div>
+          </li>
+        </div>
       </ul>
     </div>
   );
